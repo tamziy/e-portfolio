@@ -5,76 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tamziy</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/8a801be9c0.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8a801be9c0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-
     <section id="landing-page">
       <nav>
         <figure>
-          <img id="personal-logo" src="./assets/logo-version-2.png" alt="" />
+          <img id="personal-logo" src="./assets/logo-white.png" alt="" />
         </figure>
         <ul class="nav__link--list">
           <li class="nav__link">
-            <a href="#" class="
-              nav__link--anchor
-              link__hover-effect
-              link__hover-effect--black
-            ">About</a>
+            <a
+              href="#"
+              class="
+              nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
           </li>
           <li class="nav__link">
-            <a href="#" class="
-              nav__link--anchor
-              link__hover-effect
-              link__hover-effect--black
-            ">Projects</a>
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
           </li>
           <li class="nav__link">
-            <a href="#" class="
-              nav__link--anchor
-              link__hover-effect
-              link__hover-effect--black
-            ">Contact</a>
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
           </li>
           <li class="nav__link click">
-            <a href="#" class="
-              nav__link--anchor
-              link__hover-effect
-              link__hover-effect--black
-            "><i class="fa-solid fa-circle-half-stroke"></i></a>
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fa-solid fa-circle-half-stroke"></i
+            ></a>
           </li>
         </ul>
       </nav>
 
       <header class="header">
         <div class="header__content">
-            <h1 class="title">Hey</h1>
-            <h1 class="title bold-color">I'm Tam.</h1>
-            <p class="header__para">I am a third year Computer Science Major at UIC, with aspirations to be a <b class="bold-color">Fullstack Software Engineer</b>. 
-                <!-- <br> -->
-                <!-- I strive to create elegant and responsive web applications.  -->
-                <!-- <br> -->
-                <!-- My goal is to harness my creativity to build innovative applications that are accessible and beneficial to people of all backgrounds. -->
-                <br>
-                Here's a bit more <b class="bold-color">about me</b>.
-            </p>
-            <div class="social__list">
-                <a href="https://www.linkedin.com/in/tamthanhle/" target="_blank" class="social__link click">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/tamziy" target="_blank" class="social__link click">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://docs.google.com/document/d/1qhR2Z0zCPaQD1YSsuVaL3MinTzmDV5vc9h8OCpy93Dg/edit?usp=sharing" target="_blank" class="social__link click">
-                    <i class="fa-regular fa-file-lines"></i>
-                </a>
-            </div>
+          <h1 class="title">Hey</h1>
+          <h1 class="title bold-color">I'm Tam.</h1>
+          <p class="header__para">
+            I am a third year Computer Science Major at UIC, with aspirations to
+            be a <b class="bold-color">Fullstack Software Engineer</b>.
+            <!-- <br> -->
+            <!-- I strive to create elegant and responsive web applications.  -->
+            <!-- <br> -->
+            <!-- My goal is to harness my creativity to build innovative applications that are accessible and beneficial to people of all backgrounds. -->
+            <br />
+            Here's a bit more <b class="bold-color">about me</b>.
+          </p>
+          <div class="social__list">
+            <a
+              href="https://www.linkedin.com/in/tamthanhle/"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/tamziy"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="./assets/Tam's Tech Resume (2).pdf"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-regular fa-file-lines"></i>
+            </a>
+          </div>
         </div>
       </header>
 
+      <button class="mail__btn click">
+        <i class="fa-solid fa-envelope"></i>
+      </button>
+      <!-- <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>   
+      </a> -->
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">Here's a bit more about me.</h3>  
+          <h4 class="modal__sub-title modal__sub-title--about">Aspiring Fullstack Software Engineer</h4>  
+          <p class="modal__para"></p>  
+        </div>
+        <div class="modal__half modal__contact">Let's have a chat!</div>
+      </div>
     </section>
 
-  </body>
+    <!-- TODO: CREATE A PROJECT SECTION -->
+    <!-- <section id="projects">
+    </section> -->
 
+    <!-- <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img class="footer__logo--img" src="./assets/logo-white.png" alt="" />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/tamziy"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/tamthanhle/"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >LinkedIn</a
+            >
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >Contact</a
+            >
+            <a
+              href="./assets/Tam's Tech Resume (2).pdf"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >Resume</a
+            >
+          </div>
+          <div class="footer__copyright">
+            Made with <i class="fa-regular fa-heart"></i> in Chicago
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+  </body>
 </html>
