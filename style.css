@@ -148,7 +148,7 @@ button {
     right: 40px;
 }
 
-/* .scroll {
+.scroll {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -188,7 +188,7 @@ button {
     100% {
         transform: translate(-50%, 50%) translateY(-3px);
     }
-} */
+}
 
 /* 
 
