@@ -61,6 +61,13 @@ button {
     width: 100%;
 }
 
+.row {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
 .link__hover-effect {
     position: relative;
 }
@@ -227,11 +234,22 @@ nav {
 
 /* 
 
+    Projects
+
+*/
+.section__title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+/* 
+
     MODAL
 
 */
 
-.modal {
+/* .modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -256,7 +274,7 @@ nav {
 .modal__contact {
     background-color: #242424;
     color: white;
-}
+} */
 
 /* 
 
