@@ -232,7 +232,7 @@ nav {
     font-size: 20px;
 }
 
-.fa-solid {
+#link-icon {
     color: white;
 }
 
@@ -245,6 +245,10 @@ nav {
     text-align: center;
     font-size: 48px;
     margin-bottom: 60px;
+}
+
+.project {
+    margin-bottom: 135px;
 }
 
 .project__img {
@@ -355,7 +359,7 @@ nav {
 
  */
 
- /* footer{
+ footer {
     background-color: #242424;
     display: flex;
     padding: 6% 0;
@@ -382,4 +386,4 @@ nav {
  .footer__social--link,
  .footer__copyright {
     color: white;
- } */
+ }
