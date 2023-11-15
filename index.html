@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tamziy</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/8a801be9c0.js"
       crossorigin="anonymous"
@@ -24,7 +25,7 @@
         <figure>
           <img id="personal-logo" src="./assets/logo-white.png" alt="" />
         </figure>
-        <ul class="nav__link--list">
+        <ul class="nav__link--list" onclick="toggleModal()" >
           <li class="nav__link">
             <a href="#" class="
               nav__link--anchor 
@@ -39,7 +40,7 @@
               link__hover-effect--black
             ">Projects</a>
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a href="#" class="
               nav__link--anchor 
               link__hover-effect 
@@ -68,7 +69,7 @@
             <!-- <br> -->
             <!-- My goal is to harness my creativity to build innovative applications that are accessible and beneficial to people of all backgrounds. -->
             <br />
-            Here's a bit more <b class="bold-color">about me</b>.
+            Here's a bit more <b class="bold-color click" onclick="toggleModal()">about me</b>.
           </p>
           <div class="social__list">
             <a
@@ -96,7 +97,7 @@
         </div>
       </header>
 
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -152,13 +153,14 @@
           </div>  
         </div>
         <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">
             Let's have a chat!
           </h3>
           <h3 class="modal__sub-title modal__sub-title--contact">
             I'm currently open to new opportunities.
           </h3>
-          <form id="contact__form" action="">
+          <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label">Name</label>
               <input class="input" name="user_name" type="text" required>
@@ -182,7 +184,6 @@
             Thanks for the message! Looking forward to speaking with you soon.
           </div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
       </div>
     </section>
 
