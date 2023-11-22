@@ -513,6 +513,15 @@ nav {
     line-height: 1.75;
 }
 
+.modal__para br {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+
 .form__item {
     margin-bottom: 20px;
 }
