@@ -187,6 +187,12 @@ nav,
   color: #242424;
 }
 
+.dark-theme .shape--2,
+.dark-theme .shape--4,
+.dark-theme .shape--6 {
+    filter: invert(100%);
+}
+
 /*
 
 LANDING PAGE
@@ -644,6 +650,7 @@ Particle Effects
 
 .shape {
   position: fixed;
+  transition: opacity 0.5s ease-out;
 }
 
 .shape--0 {
@@ -706,12 +713,17 @@ Particle Effects
     left: 0;
     transform: none;
     height: auto;
+    width: 100%;
     flex-direction: column-reverse;
     border-radius: 0;
   }
 
   .modal_half {
     width: 100%;
+  }
+
+  .shape--3, .shape--4, .shape--5 {
+    visibility: hidden;
   }
 }
 
@@ -737,6 +749,7 @@ Particle Effects
     left: 0;
     padding: 0;
     width: 100%;
+    text-align: center;
   }
 
   .project__description--sub-title {
@@ -745,5 +758,9 @@ Particle Effects
 
   .modal__half {
     padding: 40px;
+  }
+
+  .shape--3, .shape--4, .shape--5 {
+    visibility: hidden;
   }
 }

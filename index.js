@@ -59,3 +59,25 @@ function moveBackground(event) {
   }
 }
 
+function adjustShapeOpacity() {
+  const shapes = document.querySelectorAll(".shape");
+  const landingPage = document.getElementById('landing-page');
+  const bounding = landingPage.getBoundingClientRect();
+
+  // Determine the opacity based on the scroll position
+  let opacity = 1;
+  if (bounding.bottom < 0) {
+    opacity = 0; // Completely faded when the section is out of view
+  } else if (bounding.bottom < window.innerHeight) {
+    // Adjust this calculation as needed
+    opacity = bounding.bottom / window.innerHeight;
+  }
+
+  // Apply the calculated opacity to each shape
+  shapes.forEach(shape => {
+    shape.style.opacity = opacity;
+  });
+}
+
+// Listen for the scroll event
+window.addEventListener('scroll', adjustShapeOpacity);
